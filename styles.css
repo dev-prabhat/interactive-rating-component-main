@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:hsl(25, 97%, 53%);
+    --page-background:hsl(216, 12%, 8%);
+    --card-background:hsl(213, 19%, 18%);
+    --option-hover-color:hsl(216, 12%, 54%);
+    --light-gray-color:hsl(217, 12%, 63%);
+    --white-text-color:hsl(0, 0%, 100%);
+}
+
+
+.card-container{
+    padding: 5px;
+    background-color: var(--page-background);
+    font-family: 'Overpass', sans-serif;
+}
+
+.card{
+    width: 32%;
+    margin: 7% auto;
+    padding: 1.5rem;
+    background-color: var(--card-background);
+    border-radius: 10%;
+}
+
+.image-container{
+    padding: 1rem 0;
+}
+
+.image{
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: var(--page-background);
+}
+
+.question{
+    color: var(--white-text-color);
+    padding: 1.25rem 0;
+    line-height: 5px;
+    font-size: 1.75rem;
+}
+
+.feedback{
+    color: var(--light-gray-color);
+    padding: 5px 0;
+}
+
+.rating-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.rating{
+   color: var(--light-gray-color);
+   padding: 1.5rem;
+   width: 16%;
+   background-color: var(--page-background);
+   border-radius: 50%;
+   cursor: pointer;
+   text-align: center;
+}
+
+.rating:hover{
+    background-color: var(--light-gray-color);
+    color: var(--white-text-color);
+}
+
+.submit-btn{
+    background-color: var(--primary-color);
+    color: var(--white-text-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 15rem;
+    width: 100%; 
+    cursor: pointer;
+    padding: 1rem 0;
+    font-size: 1.25rem;
+}
